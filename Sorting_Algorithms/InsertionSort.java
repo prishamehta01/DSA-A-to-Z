@@ -1,3 +1,8 @@
+// Insertion Sort is a simple sorting algorithm that builds the final sorted array one element at a time. It works by repeatedly picking the next element from the unsorted portion and placing it into its correct position in the sorted portion.
+// Best case(Already sorted): O(N)
+// Average and Worst case(reverse order): O(N^2)
+// Space complexity: O(1) [In-place algorithm, no extra memory required]
+
 import java.io.*;
 import java.util.Scanner;
 public class InsertionSort{
