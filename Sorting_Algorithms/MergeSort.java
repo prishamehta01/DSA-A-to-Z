@@ -3,6 +3,8 @@
 // The O(nlogn) complexity arises because:
 // Splitting: The array is divided into two halves repeatedly, which takes O(logn) levels of recursion.
 // Merging: At each level, all elements are merged, which takes O(n) time.
+// Space Complexity: O(n) Due to the use of a temporary array(not in-place)
+// Stable sorting algorithm (maintains the relative order of equal elements)
 
 import java.util.Scanner;
 import java.io.*;
