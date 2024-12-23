@@ -1,5 +1,5 @@
 // Merge Sort is a divide-and-conquer sorting algorithm. It works by recursively dividing the array into smaller subarrays, sorting them, and then merging the sorted subarrays back into a single sorted array.
-// Time Complexity: Best , average and worst case : O(nlogn).
+// Time Complexity: Best,average and worst case : O(nlogn).
 // The O(nlogn) complexity arises because:
 // Splitting: The array is divided into two halves repeatedly, which takes O(logn) levels of recursion.
 // Merging: At each level, all elements are merged, which takes O(n) time.
