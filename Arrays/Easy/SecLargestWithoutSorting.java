@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class SecLargestWithoutSorting{
     public static int secMax(int[] arr){
         int n = arr.length;
-        if(n<2)
+        if(arr==null||n<2)
         {
             return -1;
         }
@@ -24,7 +24,7 @@ public class SecLargestWithoutSorting{
                 sec_max = arr[i];
             }
         }
-        return sec_max;
+        return (sec_max==Integer.MIN_VALUE)?-1:sec_max;
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
