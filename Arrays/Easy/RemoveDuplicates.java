@@ -39,6 +39,11 @@ public class RemoveDuplicates{
             a[i]=sc.nextInt();
         }
         int result = removeDuplicates(a);
-        System.out.println(result);
+        System.out.println("Array after removing duplicates: ");
+        for(int i=0;i<result;i++){
+            System.out.print(a[i]+" ");
+        }
+        System.out.println();
+        System.out.println("Number of non-duplicate elements: "+result);
     }
 }
