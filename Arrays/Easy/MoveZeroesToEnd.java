@@ -20,7 +20,7 @@ public class MoveZeroesToEnd{
         }
     }*/
 
-    //Optimal Approach - j keeps track of 0s and i keeps track of non zero elements
+    //Optimal Approach - j keeps track of 0s and i keeps track of non zero elements - Time Complexity-O(N) & Space Complexity-O(1)-no extra space taken.
     public static void moveZeroes(int[] nums){
         int j=0;
         for(int i=0;i<nums.length;i++){
