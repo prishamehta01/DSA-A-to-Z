@@ -6,6 +6,11 @@ Time complexity - O(N) and space Complexity: O(1)
 Here Method-2 is also an optimal approach which uses properties of xor ,i.e, xor of same numbers is 0 , so it gives us the missing number by finding xor of numbers from 0 to n and xor of array elements.
 Time complexity - O(N) and space Complexity: O(1) 
 */
+/*
+Other Brute force approaches involve:
+(i) For each number between 1 to N, we will try to find it in the given array using linear search. And if we don’t find any of them, we will return the number. Time Complexity : O(N^2) and Space Complexity : O(1).
+(ii) Using the hashing technique, we will store the frequency of each element of the given array. Now, the number( i.e. between 1 to N) for which the frequency will be 0, will be returned. Time Complexity : O(2*N) and Space Complexity : O(1).
+*/
 
 import java.util.Scanner;
 public class MissingNumber{
