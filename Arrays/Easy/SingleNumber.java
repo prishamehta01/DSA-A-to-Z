@@ -24,3 +24,5 @@ public class SingleNumber{
         System.out.println("The single number is: "+num);
     }
 }
+
+//Other approaches involve : Brute force - finding freq using count[O(N^2)] and Better Approaches like hash and hashmap - O(n)+O(n)+O(n) , Xor approach is the best and optimal one.
