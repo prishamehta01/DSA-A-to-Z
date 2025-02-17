@@ -19,7 +19,29 @@ public class LongestSubArrK{
         }
         return len;
     }
-    
+
+    //Better Approach - Hashing - Time Complexity: O(n*logn) or O(n)
+    public static int getLongestSub(int[] arr, int k) {
+        int n = arr.length;
+        Map<Integer,Integer> mp = new HashMap<>();
+        int maxlen=0;
+        int sum=0;
+        for(int i=0;i<n;i++){
+            sum+=arr[i];
+            if(sum==k){
+                maxlen=Math.max(maxlen,i+1);
+            }
+            int rem = sum-k;
+            if(mp.containsKey(rem)){
+                int len = i-mp.get(rem);
+                maxlen=Math.max(maxlen,len);
+            }
+            if(!mp.containsKey(sum)){
+                mp.put(sum,i);
+            }
+        }
+        return maxlen;
+    }
 */
     
     
