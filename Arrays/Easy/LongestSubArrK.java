@@ -43,7 +43,10 @@ public class LongestSubArrK{
         return maxlen;
     }
 */
-    
+    //Optimal Approach - Two Pointers - Time Complexity:O(2*N) and Space Complexity:O(1)
+    public static int getLongestSub(int[] arr, int k) {
+        
+    }
     
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
