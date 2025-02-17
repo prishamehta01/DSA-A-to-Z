@@ -1,19 +1,18 @@
 
 import java.util.*;
 public class LongestSubArrK{
-    /*
     
-    //Brute Force Method- Finding All possible SubArrays - time Complexity - O(n^3)
+   /* 
+
+    //Brute Force Method- Finding All possible SubArrays - time Complexity - O(n^2)
     public static int getLongestSub(int[] arr, int K){
         int n = arr.length;
         int len = 0 ;
         for(int i=0;i<n;i++){
+            int sum = 0;
             for(int j=i;j<n;j++){
-                int sum = 0;
-                for(int k=i;k<=j;k++){
-                    sum+=arr[k];
-                }
-                if(sum==K){
+                    sum+=arr[j];
+                    if(sum==K){
                     len = Math.max(len,j-i+1);
                 }
             }
@@ -21,7 +20,9 @@ public class LongestSubArrK{
         return len;
     }
     
-    */
+*/
+    
+    
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of array elements: ");
