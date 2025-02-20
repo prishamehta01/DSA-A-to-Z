@@ -5,6 +5,7 @@ public class LongestSubArrK{
    /* 
 
     //Brute Force Method- Finding All possible SubArrays - time Complexity - O(n^2)
+    //Both positive and negative values
     public static int getLongestSub(int[] arr, int K){
         int n = arr.length;
         int len = 0 ;
@@ -19,8 +20,10 @@ public class LongestSubArrK{
         }
         return len;
     }
+*/
 
-    //Better Approach - Hashing - Time Complexity: O(n*logn) or O(n) ,space Complexity: O(n) 
+//Better Approach
+// Both Positive and negative values- Hashing - Time Complexity: O(n*logn) or O(n) ,space Complexity: O(n) 
     public static int getLongestSub(int[] arr, int k) {
         int n = arr.length;
         Map<Integer,Integer> mp = new HashMap<>();
@@ -43,8 +46,9 @@ public class LongestSubArrK{
         return maxlen;
     }
 
-    //Optimal Approach
-    // - only for Positive numbers - Two Pointers - Time Complexity:O(2*N) and Space Complexity:O(1) 
+/*
+//Optimal Approach
+// - only for Positive numbers - Two Pointers - Time Complexity:O(2*N) and Space Complexity:O(1) 
     public static int getLongestSub(int[] arr, int k) {
         int n = a.length;
         int left = 0, right = 0; // 2 pointers
