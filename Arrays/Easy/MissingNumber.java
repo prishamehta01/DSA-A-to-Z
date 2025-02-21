@@ -50,5 +50,6 @@ public class MissingNumber{
         }
         int missingNum = missingNumber(a);
         System.out.println("The missing number is : "+ missingNum); //8
+        sc.close();
     }
 }
