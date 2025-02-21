@@ -83,5 +83,6 @@ public class LongestSubArrK{
         int K = sc.nextInt();
         int LongestSubArrLen = getLongestSub(a,K);
         System.out.println("Length of largest Subarray with sum K is :"+LongestSubArrLen);
+        sc.close();
     }
 }
