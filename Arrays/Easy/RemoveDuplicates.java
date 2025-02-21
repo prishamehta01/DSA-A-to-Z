@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
+//import java.util.Arrays;
 public class RemoveDuplicates{
     //Brute Force Approach - sort only 1st k elements to not loose unique elements--O(n*log(n))+O(n)
     /*public int removeDuplicates(int[] nums) {
@@ -45,5 +45,6 @@ public class RemoveDuplicates{
         }
         System.out.println();
         System.out.println("Number of non-duplicate elements: "+result);
+        sc.close();
     }
 }
