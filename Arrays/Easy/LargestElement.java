@@ -25,5 +25,6 @@ public class LargestElement{
         }
         int maximum = maxEle(a);
         System.out.println("The largest element is : "+ maximum);
+        sc.close();
     }
 }
