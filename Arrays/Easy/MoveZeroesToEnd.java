@@ -48,5 +48,6 @@ public class MoveZeroesToEnd{
         for(int x:arr){
             System.out.print(x+" ");
         }
+        sc.close();
     }
 }
