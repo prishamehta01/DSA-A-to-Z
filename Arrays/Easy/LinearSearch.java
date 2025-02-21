@@ -27,6 +27,6 @@ public class LinearSearch{
         int ele = sc.nextInt();
         boolean result = linearSearch(a,ele);
         System.out.println(result);
-
+        sc.close();
     }
 }
