@@ -23,6 +23,6 @@ public class IfArraySorted{
         }
         boolean result = isSorted(a,n);
         System.out.println(result);
-
+        sc.close();
     }
 }
