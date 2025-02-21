@@ -8,7 +8,7 @@ Therefore, we will be left with the single number.
 
 Time Complexity: O(N), Space Complexity: O(1) */
 
-import java.util.*;
+
 public class SingleNumber{
     //Optimal Approach
     public static int findSingleNumber(int[] nums) {
