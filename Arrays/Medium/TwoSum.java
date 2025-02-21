@@ -2,6 +2,8 @@
 Two Sum Problem - Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 */
 
+import java.util.HashMap;
+
 class TwoSum{
     
 /* //Brute Force Approach - Time Complexity : O(n^2)
@@ -16,6 +18,22 @@ class TwoSum{
         return new int[]{};
     }
 */
+    public int[] twoSum(int[] nums, int target) {
+        int[] res = new int[2];
+        res[0]=res[1]=-1;
+        HashMap<Integer,Integer> mp = new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            int num = nums[i];
+            int moreNeeded = target - num;
+            if(mp.containsKey(moreNeeded)){
+                res[0] = mp.get(moreNeeded);
+                res[1] = i;
+                return res;
+            }
+            mp.put(nums[i],i);
+        }
+        return res;
+    }
 
     public static void main(String[] args){
         TwoSum obj = new TwoSum();
