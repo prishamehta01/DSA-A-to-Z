@@ -37,5 +37,6 @@ public class SecLargestWithoutSorting{
         }
         int sec_large = secMax(a);
         System.out.println("The Second largest element is : "+ sec_large);
+        sc.close();
     }
 }
