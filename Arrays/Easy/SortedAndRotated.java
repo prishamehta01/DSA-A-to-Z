@@ -28,5 +28,6 @@ public class SortedAndRotated{
         }
         boolean result = check(a,n);
         System.out.println(result);
+        sc.close();
     }
 }
