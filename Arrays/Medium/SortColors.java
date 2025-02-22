@@ -4,7 +4,8 @@ You must solve this problem without using the library's sort function(Arrays.sor
 */
 public class SortColors {
 
-    //Brute force Method - Time complexity:O(N)
+/* 
+//Brute force Method - Time complexity:O(N) it has many loop sand is redundant
     public static void sortColors(int[] nums) {
         int c0=0,c1=0,c2=0;
         for(int i=0;i<nums.length;i++){
@@ -30,6 +31,12 @@ public class SortColors {
             nums[j++]=2;
             c2--;
         }
+    }
+*/
+//Optimal Approach - This problem is a variation of the popular Dutch National flag algorithm. 
+//Time Complexity : O(N)
+    public static void sortColors(int[] nums){
+        
     }
     public static void main(String[] args) {
         int[] arr = {2,0,2,1,1,0};
