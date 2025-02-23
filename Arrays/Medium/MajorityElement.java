@@ -21,7 +21,7 @@ public class MajorityElement {
     }
      */
 
-    //Optimal Approach: Moore’s Voting Algorithm - Time complexity:O(n)+O(n) , Space Complexity:O(1)
+    //Optimal Approach: Moore’s Voting Algorithm - Time complexity:O(n)+O(n) ,Space Complexity:O(1)
     public static int majorityElement(int[] nums) {
         int c = nums[0];
         int count = 1;
