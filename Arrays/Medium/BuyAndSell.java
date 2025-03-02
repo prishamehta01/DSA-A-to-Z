@@ -21,7 +21,7 @@ public class BuyAndSell {
     }
 */
 
-    //Optimal Approach
+    //Optimal Approach - Time complexity:O(N)
     public static int maxProfit(int[] prices) {
         int maxPro = 0;
         int min = Integer.MAX_VALUE;
