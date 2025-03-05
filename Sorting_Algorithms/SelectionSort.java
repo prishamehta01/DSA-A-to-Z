@@ -2,7 +2,7 @@
 // Time complexity: O(N^2)
 // Space complexity:O(1) -- InPLace sorting
 
-
+import java.util.Scanner;
 public class SelectionSort{
     public static int[] selectionSort(int[] arr)
     {
@@ -39,5 +39,6 @@ public class SelectionSort{
         {
             System.out.print(num+" ");
         } 
+        sc.close();
         }
 }
