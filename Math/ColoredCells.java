@@ -10,7 +10,7 @@ Example:
 
 
 import java.util.Scanner;
-public class ColorCells{
+public class ColoredCells{
 /* 
     //Better Approach - Intuition - Pattern(1,5,13....)
     public static long coloredCells(int n) {
@@ -22,7 +22,11 @@ public class ColorCells{
     }
 */
 
-    //Optimal Approach
+    /*Optimal Approach - Time Complexity: O(1)
+    - we know the pattern (1,5,13,25..) 
+    can be written as 1+4(1+2+...+n-1) , sum of 1st n-1 natural numbers,
+    which further is 1+(4(n*(n-1)/2))
+    Simplified format = 1+2*(n)*(n-1)  */
     public static long coloredCells(int n) {
         return 1+(long)2*n*(n-1);
     }
