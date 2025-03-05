@@ -3,7 +3,6 @@
 // Average(random order) and Worst case(reverse order): O(N^2)
 // Space complexity: O(1) [In-place algorithm, no extra memory required]
 
-import java.io.*;
 import java.util.Scanner;
 public class InsertionSort{
     public static void insertionSort(int[] arr,int n){
@@ -34,5 +33,6 @@ public class InsertionSort{
         {
             System.out.print(a[i]+" ");
         }
+        sc.close();
     }
 }
