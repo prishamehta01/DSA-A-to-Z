@@ -17,7 +17,7 @@ public class NextPermutation {
                 break;
             }
         }
-        if(index==-1){  //if no break point array is sorted, so reverse the array
+        if(index==-1){  //if no break point array is descending order,i.e last, so reverse the array to get 1st ele
             rev(nums,0,nums.length-1);
             return;
         }
