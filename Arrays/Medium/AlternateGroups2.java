@@ -1,6 +1,6 @@
 public class AlternateGroups2 {
     //Brute Force Approach
-    public static int numberOfAlternatingGroups(int[] colors, int k) {
+    /*public static int numberOfAlternatingGroups(int[] colors, int k) {
         int n = colors.length;
         int count = 0;
         for(int i=0;i<n;i++){
@@ -14,6 +14,25 @@ public class AlternateGroups2 {
         }
         return count;
         
+    }*/
+
+    //Optimal Approach
+    public static int numberOfAlternatingGroups(int[] colors, int k) {
+        int n = colors.length;
+        int count = 0;
+        int left = 0;
+        
+        for (int right = 0; right < n + k - 1; right++) {
+            if (right > 0 && colors[right % n] == colors[(right - 1) % n]) {
+                left = right;  
+            }
+            
+            if (right - left + 1 >= k) {
+                count++;  
+            }
+        }
+        
+        return count;
     }
     public static void main(String[] args) {
         int[] colors = {0,1,0,0,1,0,1};
