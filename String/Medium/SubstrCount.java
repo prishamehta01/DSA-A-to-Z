@@ -1,4 +1,3 @@
-package String.Medium;
 
 public class SubstrCount {
     public static int numberOfSubstrings(String s) {
