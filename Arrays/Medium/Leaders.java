@@ -7,7 +7,7 @@ import java.util.Collections;
 
 public class Leaders {
 
-    //Better optimal -- Time Complexity -- O(N)
+    //optimal approach -- Time Complexity -- O(N)
     static ArrayList<Integer> leaders(int arr[]) {
         ArrayList<Integer> as = new ArrayList<>();
         int n = arr.length;
