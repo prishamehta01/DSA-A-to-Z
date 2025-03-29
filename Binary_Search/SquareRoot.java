@@ -14,6 +14,7 @@ public class SquareRoot {
                     end = mid - 1;
                 }
                 else{
+                    res = mid;
                     beg = mid+1;
                 }
             }
@@ -22,7 +23,7 @@ public class SquareRoot {
         
     }
     public static void main(String[] args) {
-        int res = sqrt(36);
+        int res = sqrt(37);
         System.out.println(res);
     }
 }
