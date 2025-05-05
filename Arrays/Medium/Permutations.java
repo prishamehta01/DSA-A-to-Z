@@ -32,7 +32,7 @@ public class Permutations {
     }
     public static void main(String[] args) {
         Permutations obj = new Permutations();
-        int[] nums = {1, 2, 3};
+        int[] nums = {1, 2, 3,4};
         System.out.println(obj.permute(nums));
     }
 }
