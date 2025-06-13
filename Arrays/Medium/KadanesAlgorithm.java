@@ -27,14 +27,14 @@ public class KadanesAlgorithm {
 
 
 //Optimal 
-    public static int kadane(int[] nums){
-        int gmax = nums[0];
-        int cmax = nums[0];
+    public static int kadane(int[] nums) {
+        int maxUntilHere = nums[0];
+        int maxSumSoFar = nums[0];
         for(int i=1;i<nums.length;i++){
-            cmax = Math.max(nums[i],cmax+nums[i]);
-            gmax = Math.max(gmax,cmax);
+            maxUntilHere = Math.max(nums[i],maxUntilHere+nums[i]);
+            maxSumSoFar = Math.max(maxSumSoFar, maxUntilHere);
         }
-        return gmax;
+        return maxSumSoFar;
     }
 //Optimal Approach : The intuition of the algorithm is not to consider the subarray as a part of the answer if its sum is less than 0. A subarray with a sum less than 0 will always reduce our answer and so this type of subarray cannot be a part of the subarray with maximum sum.
 //Time Complexity: O(N)
