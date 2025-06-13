@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class ProdExceptSelf {
     public static int[] productExceptSelf(int[] nums) {
         int n = nums.length;
